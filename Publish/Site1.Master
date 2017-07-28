@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ptt_report.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Bootstrap Core CSS -->
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Navigation -->
+        <div class="topHeader">
+            <div class="container" style="background: none;">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img src="img/logo_in.png">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <nav class="navbar navbar-inverse" role="navigation" style="margin-left: -12px;">
+            <div class="container">
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+
+                        <li class="menu3">
+                            <img src="img/ico03.png" class="icomeu" /><asp:Button ID="btnQuarReport" runat="server" Text="Quarterly Report" OnClick="btnQuarReport_Click" /></li>
+                        <li class="menu3">
+                            <img src="img/ico03.png" class="icomeu" /><asp:Button ID="btnTPReport" runat="server" Text="ธพ. Report" OnClick="btnTPReport_Click" /></li>
+                        <li class="menu2">
+                            <img src="img/ico02.png" class="icomeu" /><asp:Button ID="btnPIReport" runat="server" Text="Pipeline Integrity Report" /></li>
+                        <li class="menu2" id="mas_menu1" runat="server" visible="false">
+                            <img src="img/ico02.png" class="icomeu" /><asp:Button ID="btnusermanage" runat="server" Text="Accout Management" OnClick="btnusermanage_Click" /></li>
+                        <li class="menu2" id="mas_menu2" runat="server" visible="false">
+                            <img src="img/ico02.png" class="icomeu" /><asp:Button ID="btnRepTem" runat="server" Text="Report Template Management" OnClick="btnRepTem_Click" /></li>
+                        <li class="profile">
+                            <img src="img/ico01.png" class="icomeu pro" style="float: left" />
+                            <span class="spanPro">Name :
+                           
+                                <asp:Label ID="lbname" runat="server" Text="-"></asp:Label>Posision :<asp:Label ID="lbposision" runat="server" Text="-"></asp:Label>
+                                Role :
+                           
+                                <asp:Label ID="lbrole" runat="server" Text="-"></asp:Label>
+                            </span>
+                            <asp:LinkButton ID="lnkChange_Password" runat="server" OnClick="lnkChange_Password_Click">Change Password</asp:LinkButton>
+                            <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
+                        </li>
+                        <li></li>
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container" style="margin-bottom: 50px; padding-bottom: 50px;">
+            <div class="wrapper">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

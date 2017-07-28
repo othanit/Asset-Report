@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A56C597-8BF8-4049-B000-BD11AA2ED63F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ptt_report</RootNamespace>
+    <AssemblyName>ptt_report</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>C:\app\client\Dell  PC\product\12.2.0\client_1\odp.net\managed\common\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="changePassword.aspx" />
+    <Content Include="ChemicalThreatment.aspx" />
+    <Content Include="CleaningPIG.aspx" />
+    <Content Include="create_quar_rep.aspx" />
+    <Content Include="create_t_p_rep.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="externalcorrosion.aspx" />
+    <Content Include="freespan.aspx" />
+    <Content Include="history_1.aspx" />
+    <Content Include="history_2.aspx" />
+    <Content Include="history_3.aspx" />
+    <Content Include="icon\a.jpg" />
+    <Content Include="icon\b.jpg" />
+    <Content Include="icon\c.jpg" />
+    <Content Include="icon\d.jpg" />
+    <Content Include="img_rep\Approve.png" />
+    <Content Include="img_rep\Assign.png" />
+    <Content Include="img_rep\In Process.png" />
+    <Content Include="img_rep\Reject.png" />
+    <Content Include="permit.aspx" />
+    <Content Include="permitappendixB.aspx" />
+    <Content Include="permitappendixD.aspx" />
+    <Content Include="permitappendixH.aspx" />
+    <Content Include="permitappendixI.aspx" />
+    <Content Include="permitcp.aspx" />
+    <Content Include="permitexecutivesummary.aspx" />
+    <Content Include="permitilipig.aspx" />
+    <Content Include="permitpatrolling.aspx" />
+    <Content Include="permitproject.aspx" />
+    <Content Include="permitwallthickness.aspx" />
+    <Content Include="pipeline_report.aspx" />
+    <Content Include="piroffshorepig.aspx" />
+    <Content Include="pironshorepig.aspx" />
+    <Content Include="pironshoreunpig.aspx" />
+    <Content Include="reptmp_add.aspx" />
+    <Content Include="rov.aspx" />
+    <Content Include="Scripts\chosen.jquery.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="settlementsurvey.aspx" />
+    <Content Include="soilerosion.aspx" />
+    <Content Include="edituser.aspx" />
+    <Content Include="directassessment.aspx" />
+    <Content Include="patrolling.aspx" />
+    <Content Include="forget_pass.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="ilipig.aspx" />
+    <Content Include="otherProject.aspx" />
+    <Content Include="piping.aspx" />
+    <Content Include="QuarterlyReport.aspx" />
+    <Content Include="executivesummary.aspx" />
+    <Content Include="rbi.aspx" />
+    <Content Include="reptmp.aspx" />
+    <Content Include="sim.aspx" />
+    <Content Include="Style\chosen.css" />
+    <Content Include="t_p_rep.aspx" />
+    <Content Include="usermanagement.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\callmail.cs" />
+    <Compile Include="App_Code\chemicaltreatmentDLL.cs" />
+    <Compile Include="App_Code\cleaningPigDLL.cs" />
+    <Compile Include="App_Code\create_quar_repDLL.cs" />
+    <Compile Include="App_Code\create_tp_repDLL.cs" />
+    <Compile Include="App_Code\defaultDLL.cs" />
+    <Compile Include="App_Code\directassessmentDLL.cs" />
+    <Compile Include="App_Code\executivesummaryDLL.cs" />
+    <Compile Include="App_Code\externalcorrosionDLL.cs" />
+    <Compile Include="App_Code\FreeSpanDLL.cs" />
+    <Compile Include="App_Code\history_1DLL.cs" />
+    <Compile Include="App_Code\history_2DLL.cs" />
+    <Compile Include="App_Code\history_3DLL.cs" />
+    <Compile Include="App_Code\ilipigDLL.cs" />
+    <Compile Include="App_Code\otherprojectsDLL.cs" />
+    <Compile Include="App_Code\patrollingDLL.cs" />
+    <Compile Include="App_Code\pipeline_reportDLL.cs" />
+    <Compile Include="App_Code\pipingDLL.cs" />
+    <Compile Include="App_Code\piroffspDLL.cs" />
+    <Compile Include="App_Code\pironspDLL.cs" />
+    <Compile Include="App_Code\pironsuDLL.cs" />
+    <Compile Include="App_Code\QuarterlyReportDLL.cs" />
+    <Compile Include="App_Code\rbiDLL.cs" />
+    <Compile Include="App_Code\reptmpDLL.cs" />
+    <Compile Include="App_Code\rovDLL.cs" />
+    <Compile Include="App_Code\settlementsurveyDLL.cs" />
+    <Compile Include="App_Code\simDLL.cs" />
+    <Compile Include="App_Code\soilerosionDLL.cs" />
+    <Compile Include="App_Code\TPReportDLL.cs" />
+    <Compile Include="App_Code\t_p_repDLL.cs" />
+    <Compile Include="App_Code\usermanagementDLL.cs" />
+    <Compile Include="changePassword.aspx.cs">
+      <DependentUpon>changePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="changePassword.aspx.designer.cs">
+      <DependentUpon>changePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChemicalThreatment.aspx.cs">
+      <DependentUpon>ChemicalThreatment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChemicalThreatment.aspx.designer.cs">
+      <DependentUpon>ChemicalThreatment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CleaningPIG.aspx.cs">
+      <DependentUpon>CleaningPIG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CleaningPIG.aspx.designer.cs">
+      <DependentUpon>CleaningPIG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="create_quar_rep.aspx.cs">
+      <DependentUpon>create_quar_rep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="create_quar_rep.aspx.designer.cs">
+      <DependentUpon>create_quar_rep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="create_t_p_rep.aspx.cs">
+      <DependentUpon>create_t_p_rep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="create_t_p_rep.aspx.designer.cs">
+      <DependentUpon>create_t_p_rep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="externalcorrosion.aspx.cs">
+      <DependentUpon>externalcorrosion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="externalcorrosion.aspx.designer.cs">
+      <DependentUpon>externalcorrosion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="freespan.aspx.cs">
+      <DependentUpon>freespan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="freespan.aspx.designer.cs">
+      <DependentUpon>freespan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="history_1.aspx.cs">
+      <DependentUpon>history_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="history_1.aspx.designer.cs">
+      <DependentUpon>history_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="history_2.aspx.cs">
+      <DependentUpon>history_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="history_2.aspx.designer.cs">
+      <DependentUpon>history_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="history_3.aspx.cs">
+      <DependentUpon>history_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="history_3.aspx.designer.cs">
+      <DependentUpon>history_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NestedMasterPage2.master.cs">
+      <DependentUpon>NestedMasterPage2.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedMasterPage2.master.designer.cs">
+      <DependentUpon>NestedMasterPage2.master</DependentUpon>
+    </Compile>
+    <Compile Include="NestedMasterPagePIR.master.cs">
+      <DependentUpon>NestedMasterPagePIR.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedMasterPagePIR.master.designer.cs">
+      <DependentUpon>NestedMasterPagePIR.master</DependentUpon>
+    </Compile>
+    <Compile Include="permit.aspx.cs">
+      <DependentUpon>permit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="permit.aspx.designer.cs">
+      <DependentUpon>permit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="permitappendixB.aspx.cs">
+      <DependentUpon>permitappendixB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="permitappendixB.aspx.designer.cs">
+      <DependentUpon>permitappendixB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="permitappendixD.aspx.cs">
+      <DependentUpon>permitappendixD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="permitappendixD.aspx.designer.cs">
+      <DependentUpon>permitappendixD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="permitappendixH.aspx.cs">
+      <DependentUpon>permitappendixH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="permitappendixH.aspx.designer.cs">
+      <DependentUpon>permitappendixH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="permitappendixI.aspx.cs">
+      <DependentUpon>permitappendixI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="permitappendixI.aspx.designer.cs">
+      <DependentUpon>permitappendixI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="permitcp.aspx.cs">
+      <DependentUpon>permitcp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="permitcp.aspx.designer.cs">
+      <DependentUpon>permitcp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="permitexecutivesummary.aspx.cs">
+      <DependentUpon>permitexecutivesummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="permitexecutivesummary.aspx.designer.cs">
+      <DependentUpon>permitexecutivesummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="permitilipig.aspx.cs">
+      <DependentUpon>permitilipig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="permitilipig.aspx.designer.cs">
+      <DependentUpon>permitilipig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="permitpatrolling.aspx.cs">
+      <DependentUpon>permitpatrolling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="permitpatrolling.aspx.designer.cs">
+      <DependentUpon>permitpatrolling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="permitproject.aspx.cs">
+      <DependentUpon>permitproject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="permitproject.aspx.designer.cs">
+      <DependentUpon>permitproject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="permitwallthickness.aspx.cs">
+      <DependentUpon>permitwallthickness.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="permitwallthickness.aspx.designer.cs">
+      <DependentUpon>permitwallthickness.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pipeline_report.aspx.cs">
+      <DependentUpon>pipeline_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pipeline_report.aspx.designer.cs">
+      <DependentUpon>pipeline_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="piroffshorepig.aspx.cs">
+      <DependentUpon>piroffshorepig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="piroffshorepig.aspx.designer.cs">
+      <DependentUpon>piroffshorepig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pironshorepig.aspx.cs">
+      <DependentUpon>pironshorepig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pironshorepig.aspx.designer.cs">
+      <DependentUpon>pironshorepig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pironshoreunpig.aspx.cs">
+      <DependentUpon>pironshoreunpig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pironshoreunpig.aspx.designer.cs">
+      <DependentUpon>pironshoreunpig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reptmp_add.aspx.cs">
+      <DependentUpon>reptmp_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reptmp_add.aspx.designer.cs">
+      <DependentUpon>reptmp_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rov.aspx.cs">
+      <DependentUpon>rov.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rov.aspx.designer.cs">
+      <DependentUpon>rov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settlementsurvey.aspx.cs">
+      <DependentUpon>settlementsurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settlementsurvey.aspx.designer.cs">
+      <DependentUpon>settlementsurvey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="soilerosion.aspx.cs">
+      <DependentUpon>soilerosion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="soilerosion.aspx.designer.cs">
+      <DependentUpon>soilerosion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edituser.aspx.cs">
+      <DependentUpon>edituser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edituser.aspx.designer.cs">
+      <DependentUpon>edituser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="directassessment.aspx.cs">
+      <DependentUpon>directassessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="directassessment.aspx.designer.cs">
+      <DependentUpon>directassessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="patrolling.aspx.cs">
+      <DependentUpon>patrolling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="patrolling.aspx.designer.cs">
+      <DependentUpon>patrolling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forget_pass.aspx.cs">
+      <DependentUpon>forget_pass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forget_pass.aspx.designer.cs">
+      <DependentUpon>forget_pass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ilipig.aspx.cs">
+      <DependentUpon>ilipig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ilipig.aspx.designer.cs">
+      <DependentUpon>ilipig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NestedMasterPage1.master.cs">
+      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedMasterPage1.master.designer.cs">
+      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+    </Compile>
+    <Compile Include="otherProject.aspx.cs">
+      <DependentUpon>otherProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otherProject.aspx.designer.cs">
+      <DependentUpon>otherProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="piping.aspx.cs">
+      <DependentUpon>piping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="piping.aspx.designer.cs">
+      <DependentUpon>piping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuarterlyReport.aspx.cs">
+      <DependentUpon>QuarterlyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuarterlyReport.aspx.designer.cs">
+      <DependentUpon>QuarterlyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="executivesummary.aspx.cs">
+      <DependentUpon>executivesummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="executivesummary.aspx.designer.cs">
+      <DependentUpon>executivesummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rbi.aspx.cs">
+      <DependentUpon>rbi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rbi.aspx.designer.cs">
+      <DependentUpon>rbi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reptmp.aspx.cs">
+      <DependentUpon>reptmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reptmp.aspx.designer.cs">
+      <DependentUpon>reptmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sim.aspx.cs">
+      <DependentUpon>sim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sim.aspx.designer.cs">
+      <DependentUpon>sim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="t_p_rep.aspx.cs">
+      <DependentUpon>t_p_rep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="t_p_rep.aspx.designer.cs">
+      <DependentUpon>t_p_rep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usermanagement.aspx.cs">
+      <DependentUpon>usermanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usermanagement.aspx.designer.cs">
+      <DependentUpon>usermanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <Compile Include="WebClass\Adapter\ClassFactory.cs" />
+    <Compile Include="WebClass\Adapter\DBServerOracle.cs" />
+    <Compile Include="WebClass\Management\BMAPManagement.cs" />
+    <Compile Include="WebClass\MappingTable\BMAPTable.cs" />
+    <Compile Include="WebClass\SQLService\BMAPServiceSelect.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+    <Content Include="NestedMasterPage1.master" />
+    <Content Include="NestedMasterPage2.master" />
+    <Content Include="tmp_rep\Quaterly_report.dotx" />
+    <Content Include="packages.config" />
+    <Content Include="NestedMasterPagePIR.master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="gen_1\" />
+    <Folder Include="gen_2\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>99</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>22298</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:22298/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

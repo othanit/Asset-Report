@@ -1,0 +1,8 @@
+C:\Users\ajn_1\Documents\Visual Studio 2015\Projects\ptt_report\ptt_report\bin\ptt_report.dll.config
+C:\Users\ajn_1\Documents\Visual Studio 2015\Projects\ptt_report\ptt_report\bin\ptt_report.dll
+C:\Users\ajn_1\Documents\Visual Studio 2015\Projects\ptt_report\ptt_report\bin\ptt_report.pdb
+C:\Users\ajn_1\Documents\Visual Studio 2015\Projects\ptt_report\ptt_report\obj\x86\Debug\ptt_report.csprojResolveAssemblyReference.cache
+C:\Users\ajn_1\Documents\Visual Studio 2015\Projects\ptt_report\ptt_report\obj\x86\Debug\Interop.Office.dll
+C:\Users\ajn_1\Documents\Visual Studio 2015\Projects\ptt_report\ptt_report\obj\x86\Debug\ptt_report.csproj.ResolveComReference.cache
+C:\Users\ajn_1\Documents\Visual Studio 2015\Projects\ptt_report\ptt_report\obj\x86\Debug\ptt_report.dll
+C:\Users\ajn_1\Documents\Visual Studio 2015\Projects\ptt_report\ptt_report\obj\x86\Debug\ptt_report.pdb

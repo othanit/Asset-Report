@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage2.master.cs" Inherits="ptt_report.NestedMasterPage2" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h3 class="mini_head">ธพ. Report Year :
+                   
+        <asp:Label ID="lbYear" runat="server" Text="-"></asp:Label>
+        Permit :
+                   
+        <asp:Label ID="lbPermit" runat="server" Text="-"></asp:Label>
+    </h3>
+    <table class="master1">
+        <tr>
+            <td style="width: 250px;">
+                <div class="menu_left">
+                    <ul>
+                        <li id="menuleft01">
+                            <asp:LinkButton ID="lnkPermit_Info" runat="server" OnClick="lnkPermit_Info_Click" Font-Underline="false">Permit Info</asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="LinkExecusiveSummary" runat="server" Font-Underline="false" OnClick="LinkExecusiveSummary_Click">Exceusive Summary</asp:LinkButton>
+
+                            <ul>
+                                <li id="menuleft02"><asp:LinkButton ID="lnkPatrolling" runat="server" Font-Underline="false" OnClick="lnkPatrolling_Click">Patrolling</asp:LinkButton></li>
+                                <li id="menuleft03"><asp:LinkButton ID="lnkCP" runat="server" Font-Underline="false" OnClick="lnkCP_Click">CP</asp:LinkButton></li>
+                                <li id="menuleft04"><asp:LinkButton ID="lnkILIPIG" runat="server" Font-Underline="false" OnClick="lnkILIPIG_Click">ILI PIG</asp:LinkButton></li>
+                                <li id="menuleft05"><asp:LinkButton ID="lnkWallThickness" runat="server" Font-Underline="false" OnClick="lnkWallThickness_Click">Wall Thickness</asp:LinkButton></li>
+                                <li id="menuleft06"><asp:LinkButton ID="lnkProject" runat="server" Font-Underline="false" OnClick="lnkProject_Click">Project</asp:LinkButton></li>
+                                <li id="menuleft07"><asp:LinkButton ID="lnkAppendix1" runat="server" Font-Underline="false" OnClick="lnkAppendix1_Click">ภาคผนวก ข.</asp:LinkButton></li>	
+	                            <li id="menuleft08"><asp:LinkButton ID="lnkAppendix2" runat="server" Font-Underline="false" OnClick="lnkAppendix2_Click">ภาคผนวก ง.</asp:LinkButton></li>
+                                <li id="menuleft09"><asp:LinkButton ID="lnkAppendix3" runat="server" Font-Underline="false" OnClick="lnkAppendix3_Click">ภาคผนวก จ.</asp:LinkButton></li>
+	                            <li id="menuleft10"><asp:LinkButton ID="lnkAppendix4" runat="server" Font-Underline="false" OnClick="lnkAppendix4_Click">ภาคผนวก ฉ.</asp:LinkButton></li>
+                            </ul>
+
+                        </li>
+                            
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <asp:ContentPlaceHolder ID="ChildContent2" runat="server" />
+            </td>
+        </tr>
+    </table>
+</asp:Content>

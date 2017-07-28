@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage1.master.cs" Inherits="ptt_report.NestedMasterPage1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <h3 class="mini_head">Quarterly Report Year :
+                   
+        <asp:Label ID="lbYear" runat="server" Text="-"></asp:Label>
+        Quarter :
+                   
+        <asp:Label ID="lbQuarter" runat="server" Text="-"></asp:Label>
+    </h3>
+    <table class="master1">
+        <tr>
+            <td style="width:250px;">
+                <div class="menu_left">
+                    <ul>
+                        <li id="menuleft01">
+                            <asp:LinkButton ID="lnkExecut_sum" runat="server" OnClick="lnkExecut_sum_Click" Font-Underline="false">Executive summary</asp:LinkButton></li>
+                        <li>
+                            3rd party Interface
+                            
+                            <ul>
+                                <li id="menuleft02"><asp:LinkButton ID="lnkPatrolling" runat="server" OnClick="lnkPatrolling_Click" Font-Underline="false">Patrolling</asp:LinkButton></li>
+                                <li id="menuleft03"><asp:LinkButton ID="lnkDirectAsset" runat="server" OnClick="lnkDirectAsset_Click" Font-Underline="false">Direct Assessment</asp:LinkButton></li>
+                                <li id="menuleft04"> <asp:LinkButton ID="lnkSoilErosion" runat="server" OnClick="lnkSoilErosion_Click" Font-Underline="false">Soil Erosion</asp:LinkButton></li>
+                                <li id="menuleft05"><asp:LinkButton ID="lnkSett" runat="server" OnClick="lnkSett_Click" Font-Underline="false">Settlement Survey</asp:LinkButton></li>
+                                <li id="menuleft06"><asp:LinkButton ID="lnkROV" runat="server" OnClick="lnkROV_Click" Font-Underline="false">ROV</asp:LinkButton></li>
+                                <li id="menuleft07"> <asp:LinkButton ID="lnkFreeSpan" runat="server" OnClick="lnkFreeSpan_Click" Font-Underline="false">Free Span</asp:LinkButton></li>
+                            </ul>
+                        </li>
+                        <li id="menuleft00"><asp:LinkButton ID="lnkExternalCorrosion" runat="server" OnClick="lnkExternalCorrosion_Click" Font-Underline="false">External Corrosion</asp:LinkButton></li>
+                        <li>
+                            Internal Corrosion   
+                            <ul>
+                                <li id="menuleft08"><asp:LinkButton ID="lnkCleaningPIG" runat="server" OnClick="lnkCleaningPIG_Click" Font-Underline="false">Cleaning PIG</asp:LinkButton></li>
+                                <li id="menuleft09"><asp:LinkButton ID="lnkILIPIG" runat="server" OnClick="lnkILIPIG_Click" Font-Underline="false">ILI PIG</asp:LinkButton></li>
+                                <li id="menuleft10"><asp:LinkButton ID="lnkChemicalThreatment" runat="server" OnClick="lnkChemicalThreatment_Click" Font-Underline="false">Chemical Threatment</asp:LinkButton></li>
+                             
+                            </ul>
+                        </li>
+                        <li id="menuleft11"><asp:LinkButton ID="lnkPiping" runat="server" OnClick="lnkPiping_Click" Font-Underline="false">Piping</asp:LinkButton></li>
+                        <li>Offshore 
+                            <ul>
+                                <li id="menuleft12"><asp:LinkButton ID="lnkRBI" runat="server" OnClick="lnkRBI_Click" Font-Underline="false">RBI</asp:LinkButton></li>
+                                <li id="menuleft13"> <asp:LinkButton ID="lnkSIM" runat="server" OnClick="lnkSIM_Click" Font-Underline="false">SIM</asp:LinkButton></li>
+                            </ul>
+                        </li>
+                        <li id="menuleft14"><asp:LinkButton ID="lnkOtherProjects" runat="server" OnClick="lnkOtherProjects_Click" Font-Underline="false">Other Projects</asp:LinkButton></li>
+                 
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <asp:ContentPlaceHolder ID="ChildContent2" runat="server" />
+            </td>
+        </tr>
+    </table>
+</asp:Content>

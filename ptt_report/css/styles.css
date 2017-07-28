@@ -1,0 +1,754 @@
+﻿/* Font imports */
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,400italic);*/
+
+
+@font-face {
+	  font-family: cs_chatthaiuiregular;  
+	  src: url(font/CSChatThaiUI.ttf)  format("truetype");  /*-- font.ttf ชี้จากไฟล์ .css --*/
+}
+
+
+/* Common styles */
+body {
+    font-family: cs_chatthaiuiregular;  
+    padding-top: 50px;
+    background: url(../img/BG.jpg) repeat-y;
+    font-size:10pt;
+}
+
+li, a, p, div, input {
+    font-family: cs_chatthaiuiregular;  
+    font-size:10pt;
+
+}
+
+.divLogin {
+
+    background: url(../img/bg_login.png);
+    width: 313px;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.divLogin table {
+    width: 100%;
+    text-align: left;
+}
+
+.divLogin td{
+    padding: 5px 5px;
+}
+
+.navbar-inverse {
+    background-color:none;
+    border-color: none;
+
+}
+.profile {
+    background: url(../img/bg_profile.png) ;
+    color: #fff;
+    padding: 5px 10px;
+    color: #fff;
+    height: 25px;
+    width: 481.5px;
+}
+.icomeu {
+    margin-top: -5px;
+    margin-left: -13px;
+}
+.navbar-nav {
+    margin-left: -26px;
+    margin-top: -16px;
+}
+
+.menu2 {
+    background: url(../img/bg_menu2.png) repeat-x;
+    color: #fff;
+    padding: 5px 7px;
+    color: #fff;
+    height: 40px;
+}
+.menu2 input[type=submit] {
+    background: none;
+    border: none;
+ 
+}
+
+.menu3 {
+    background: url(../img/bg_menu3.png) repeat-x;
+    color: #fff;
+    padding: 5px 10px;
+    color: #fff;
+    height: 40px;
+}
+.menu3 input[type=submit] {
+    background: none;
+    border: none;
+ 
+}
+
+
+.menu4 {
+    background: url(../img/bg_menu4.png) repeat-x;
+    color: #fff;
+    padding: 5px 10px;
+    color: #fff;
+    height: 40px;
+}
+.menu4 input[type=submit] {
+    background: none;
+    border: none;
+ 
+}
+
+.bar1 {
+   background: url(../img/bg_bar1.png) repeat-x; 
+}
+.bar2 {
+   background: url(../img/bg_bar2.png) repeat-x; 
+}
+.barinfo {
+    background: #8fcdde;
+    float: left;
+}
+.barinfo table {
+    width: 100%;
+ 
+
+}
+.bar {
+    float: left;
+    text-align: center;
+    padding: 10px 24px;
+}
+
+
+.bar i {
+   width: 47px;
+    font-size: 65px;
+    color: #ece2df;
+}
+
+.bar input[type=submit] {
+    border: none;
+    color: #fff;
+    font-size: 15pt;
+    margin-top: -69px;
+    background: none;
+    padding-top: 90px;
+    vertical-align: top;
+}
+.page_header {
+    margin: 0px;
+    background: url(../img/bg_header.png) no-repeat;
+    font-size: 18px;
+    padding-left: 54px;
+    padding: 13px 50px;
+    color: #fff;
+}
+
+#ContentPlaceHolder1_divbsa {
+    padding: 15px;
+}
+
+.table-bordered {
+    background: #ccc;
+}
+
+.mini_head {
+    background: #76a2bd;
+    padding: 8px 10px;
+    color: #fff;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+.mini_head2 {
+    background: #aa786f;
+    padding: 8px 10px;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+#ContentPlaceHolder1_divptt {
+    padding: 15px;
+}
+
+#form1 {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.navbar-nav li {
+    float:left;
+    list-style:none;
+    float:left;
+}
+
+    .navbar-nav li a {
+        color:#fff;
+    }
+
+    .navbar-nav li  input[type=submit] {
+        margin-top: -32px;
+        position: relative;
+        display: block;
+        margin-left: 18px;
+        cursor:pointer;
+        color:#fff;
+        font-size:10pt;
+
+    }
+.spanPro {
+    position: relative;
+    display: block;
+    margin-left:7px;
+    float:left;
+    margin-top: 1px;
+}
+.icomeu .pro {
+    float:left;
+}
+#lnkChange_Password {
+    margin-left:10px;
+}
+
+.wrapper {
+   display:inline-block;
+   margin-top: -15px;
+   width: 100%;
+}
+    .wrapper input[type="text" i], .wrapper input[type="password" i], .wrapper select {
+        height: 23px;
+        padding-left: 10px;
+        background: #f6fdff;
+        border: 1px solid #ccc;
+    }
+
+    .wrapper select {
+        height: 25px;
+    }
+#ContentPlaceHolder1_btndepartment {
+    margin-left: -10px;
+}
+.Hbg {
+    background:#fff;
+}
+
+
+/*------------- button ----------------*/
+.btn {
+    display: inline-block;
+    padding: 1px 8px;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-info {
+    color: #fff;
+    background-color: #0c7fd2;
+    border-color: #76a5c2;
+}
+.btn-gray {
+    color: #fff;
+    background-color: #485158;
+    border-color: #737576;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.btn-green {
+    color: #fff;
+    background-color: #008000;
+    border-color: #025a02;
+}
+.btn-right {
+    float:right;
+    right: 10px;
+}
+
+
+}
+/*------------- Department ----------------*/
+#ContentPlaceHolder1_gridview_user_ptt {
+    width:100%;
+}
+    #ContentPlaceHolder1_gridview_user_ptt td {
+        padding:5px 5px;
+        border: 1px solid #ccc;
+    }
+#ContentPlaceHolder1_gridview_user_ptt th {
+    background:#94cfe1;
+    padding:5px 5px;
+    border: 1px solid #ccc;
+}
+#ContentPlaceHolder1_gridview_user_ptt tr:nth-child(even) {background: #e9e9e9} 
+#ContentPlaceHolder1_gridview_user_ptt tr:nth-child(odd) {background: #dddddd}
+
+    #ContentPlaceHolder1_gridview_user_ptt td + td + td + td {
+        text-align:center;
+    }
+
+
+/*------------- BSA ----------------*/
+
+#ContentPlaceHolder1_gridview_user_bas {
+    width:100%;
+}
+    #ContentPlaceHolder1_gridview_user_bas td {
+        padding:5px 5px;
+        border: 1px solid #ccc;
+    }
+#ContentPlaceHolder1_gridview_user_bas th {
+    background:#94cfe1;
+    padding:5px 5px;
+    border: 1px solid #ccc;
+}
+#ContentPlaceHolder1_gridview_user_bas tr:nth-child(even) {background: #e9e9e9} 
+#ContentPlaceHolder1_gridview_user_bas tr:nth-child(odd) {background: #dddddd}
+
+    #ContentPlaceHolder1_gridview_user_bas td + td +td {
+        text-align:center;
+    }
+
+
+
+#ChangePassTable td{
+    padding:10px;
+
+}
+
+
+
+/*------------- Red table ----------------*/
+
+.tb_red {
+    width:100%;
+}
+    .tb_red td {
+        padding:5px 5px;
+        border: 1px solid #ccc;
+    }
+.tb_red th {
+    background:#d0a199;
+    padding:5px 2px;
+    border: 1px solid #ccc;
+}
+.tb_red tr:nth-child(even) {background: #e9e9e9} 
+.tb_red tr:nth-child(odd) {background: #dddddd}
+
+    .tb_red td + td +td {
+        text-align:center;
+    }
+
+
+
+.serchRed
+{
+    background: #f0dbd8;
+}
+
+
+
+.master1 {
+    width:100%;
+
+}.master1 td {vertical-align: top; }
+
+.bar_qr {
+    float: right;
+	margin-top: 3px;
+    margin-right: 9px;
+}
+
+#thirdPartyInterfaceForm {
+    padding:15px;
+}
+
+.barBlue {
+    width:100%;
+    border-bottom:1px solid #ccc;
+    padding-bottom:15px;
+}
+
+    .barBlue input[type="submit"] {
+        float:right;
+    }
+.info_executive_in {
+    border:1px solid #ccc;
+    padding:15px;
+    margin-bottom:10px;
+}
+.info_executive h3 {
+    font-weight: normal;
+    background:#0c7fd2;
+    color:#fff;
+    padding:7px 5px;
+    margin-bottom:0px;
+
+}
+.info_executive h3 a {
+    color:#fff;
+}
+.info_executive_in table {
+    width:100%;
+}
+    .info_executive_in table td:first-child {
+        text-align:right;
+        font-weight:bold;
+        
+    }
+
+.info_executive_in textarea {
+    width: 500px;
+    height: 150px;
+    border: 1px solid #ccc;
+}
+.info_executive_in input[type="submit"] {
+    float:left;
+    margin-right: 15px;
+}
+
+
+.menu_left {
+    background: #46a4e6;
+    padding-top: 15px;
+    color:#fff;
+    
+}
+    .menu_left a {
+        color:#fff;
+    }
+    .menu_left ul {
+         margin-left: -39px;
+    }
+    .menu_left li {
+        list-style:none;
+        padding: 6px 10px;
+        border-bottom:1px solid #2e91d6;
+    }
+    .menu_left ul li ul {
+         margin-left: 0px;
+    }
+
+        .menu_left ul li ul li:last-child {
+            border:none;
+        }
+
+.table_da1 td,
+.table_da2 td,
+.table_da3 td {
+    border:1px solid #ccc;
+    text-align:center !important;
+}
+.table_da1 th,
+.table_da2 th,
+.table_da3 th {
+    border: 1px solid #ccc;
+    text-align: center !important;
+    background: #0c7fd2;
+    color: #fff;
+    padding: 3px;
+}
+
+
+
+
+.table_pip td {
+    border:1px solid #e9e9e9;
+
+    padding:5px;
+    text-align:left !important;
+    font-weight:bold;
+    font-size:10px;
+}
+    .table_pip td + td + td + td {
+        text-align:center !important;
+    } 
+    .table_pip td + td + td + td input[type="submit"] {
+       float:none;
+    } 
+.table_pip tr:first-child td {
+    background:#ccc;
+    font-size:10pt;
+    text-align:center !important;
+}
+
+
+.table_pip tr:first-child {
+    text-align:center;
+    font-weight:bold;
+}
+
+
+.table_pip input[type="text" i] {
+    width:200px;
+}
+
+.table_da1 input[type="text" i],
+.table_da2 input[type="text" i],
+.table_da3 input[type="text" i] {
+    width:85%;
+}
+
+#ContentPlaceHolder1_ChildContent2_DAProblem,
+#ContentPlaceHolder1_ChildContent2_DAFormFeedback {
+    width:100%;
+}
+
+
+
+.table_da1 textarea {
+    width: 148px;
+}
+#ContentPlaceHolder1_ChildContent2_txtworkplan,
+#ContentPlaceHolder1_ChildContent2_txtProblem,
+#ContentPlaceHolder1_ChildContent2_txtRemark {
+    width:100%;
+}
+
+#ContentPlaceHolder1_gridview_rep_tmp {
+    background: #fff;
+    width:100%;
+}
+
+
+/*------------------ menu ------------------*/
+/* The container <div> - needed to position the dropdown content */
+/* Dropdown Button */
+.dropbtn {
+    display: list-item;
+    margin-top: -32px;
+    width: 142px;
+    margin-left: 33px;
+    text-decoration: none;
+    font-size:10pt;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #47a5e7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 13px;
+    margin-left: 22px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover input[type=submit] {
+    color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+}
+
+
+.dropdown-content li {
+    float:none !important;
+    margin-left: -39px;
+}
+    .dropdown-content li input[type=submit]{
+        color:#fff;
+        margin:0px;
+        padding: 10px 5px;
+    }
+        .dropdown-content li input[type=submit]:hover {
+            color: #fff;
+        }
+        .dropdown-content li:hover {
+            background:#0e93f4;
+
+        }
+
+.col4 th {
+    padding:5px;
+    background:#ccc;
+}
+.col4 td {
+    padding:5px;
+}
+
+.col4 td + td + td {
+    text-align:right;
+    font-weight:bold;
+}
+    .col4 td + td + td + td {
+        text-align:left;
+    }
+.col6 td+td,
+.col6 td+td+td+td,
+.col6 td+td+td+td+td+td,
+.col6 td+td+td+td+td+td+td+td {
+    text-align:left;
+}
+
+
+
+.col6 td+td+td,
+.col6 td+td+td+td+td,
+.col6 td+td+td+td+td+td+td {
+    text-align:right;
+}
+
+th {
+    text-align:center;
+}
+
+
+.boxUser {
+    background: #fff;
+    padding: 5px 50px;
+}
+
+
+#ContentPlaceHolder1_gridview_rep_tmp th {
+    background: #94cfe1;
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+}
+
+#ContentPlaceHolder1_gridview_rep_tmp td + td + td + td {
+    text-align:center;
+}
+.formAddRep {
+    width:100%;
+}
+
+.formAddRep td:first-child {
+        text-align: right;
+    width: 200px;
+    background: #12496b;
+    color: #fff;
+}
+    .formAddRep td + td + td {
+        text-align: right;
+        width: 200px;
+        background: #12496b;
+        color: #fff;
+    }
+    .formAddRep td + td + td+td {
+         background:#fff;
+        padding:10px;
+        text-align:left;
+    }
+
+.formAddRep td {
+    background:#fff;
+    padding:10px;
+}
+.bgWhote {
+    background:#fff;
+    padding:50px;
+}
+
+
+.boxhis {
+    width: 848px;
+    padding: 20px;
+}
+    .boxhis table {
+        width:100%;
+    }
+
+    .boxhis td {
+        padding:3px 5px;
+        border:1px solid #ccc;
+    }
+        .boxhis td + td + td + td {
+            text-align:center;
+        }
+    .boxhis th {
+        padding:3px 5px;
+        background:#2e91d6;
+        color:#fff;
+    }
+    .boxhis td input[type="submit" i] {
+        display: inline-block;
+        padding: 1px 8px;
+        margin-bottom: 0;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #0c7fd2;
+        border-color: #76a5c2;
+    }
+
+    .boxhis  table td table {
+            width: inherit;
+    }
+    .boxhis table td table td {
+             background:#c6c6c6;
+             color:#000;
+    }
+
+
+        .boxhis table td table td a {
+            color:#000;
+            font-weight:bold;
+        }
+
+
+#ContentPlaceHolder1_ChildContent2_gv td, #ContentPlaceHolder1_ChildContent2_gv th { padding:3px; text-align:center;}
+#ContentPlaceHolder1_ChildContent2_gv th { background:#0c7fd2; color:#fff;}
+#ContentPlaceHolder1_ChildContent2_gv input[type='text'] { width:75%;}
+    
+      

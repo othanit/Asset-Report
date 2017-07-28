@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="NestedMasterPagePIR.master.cs" Inherits="ptt_report.NestedMasterPagePIR" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h3 class="mini_head">Pipeline Integrity Report
+                   
+        <asp:Label ID="lbYear" runat="server" Text="-"></asp:Label>
+        
+                   
+        <asp:Label ID="lbPermit" runat="server" Text="-"></asp:Label>
+    </h3>
+    <table class="master1">
+        <tr>
+            <td style="width: 250px;">
+                <div class="menu_left">
+                    <ul>
+                        <li id="menuleft01">
+                            <asp:LinkButton ID="lnkPIROnShoreUnpig" runat="server" Font-Underline="false" OnClick="lnkPIROnShoreUnpig_Click" Visible="False">On Shore Unpig</asp:LinkButton>
+                        </li>
+                        <li id="menuleft02">
+                            <asp:LinkButton ID="lnkPIROnShorePig" runat="server" Font-Underline="false" OnClick="lnkPIROnShorePig_Click" Visible="False">On Shore Pig</asp:LinkButton>
+                        </li>
+                        <li id="menuleft03">
+                            <asp:LinkButton ID="lnkPIROffShorePig" runat="server" Font-Underline="false" OnClick="lnkPIROffShorePig_Click" Visible="False">Off Shore Pig</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <asp:ContentPlaceHolder ID="ChildContent2" runat="server" />
+            </td>
+        </tr>
+    </table>
+</asp:Content>

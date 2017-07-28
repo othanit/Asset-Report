@@ -1,0 +1,8 @@
+C:\Users\ajn_1\Documents\ADEV\ASSET_REP\code\pttreport-master_20170722_#2\pttreport-master\ptt_report\bin\ptt_report.dll.config
+C:\Users\ajn_1\Documents\ADEV\ASSET_REP\code\pttreport-master_20170722_#2\pttreport-master\ptt_report\bin\ptt_report.dll
+C:\Users\ajn_1\Documents\ADEV\ASSET_REP\code\pttreport-master_20170722_#2\pttreport-master\ptt_report\bin\ptt_report.pdb
+C:\Users\ajn_1\Documents\ADEV\ASSET_REP\code\pttreport-master_20170722_#2\pttreport-master\ptt_report\obj\Release\ptt_report.csprojResolveAssemblyReference.cache
+C:\Users\ajn_1\Documents\ADEV\ASSET_REP\code\pttreport-master_20170722_#2\pttreport-master\ptt_report\obj\Release\Interop.Office.dll
+C:\Users\ajn_1\Documents\ADEV\ASSET_REP\code\pttreport-master_20170722_#2\pttreport-master\ptt_report\obj\Release\ptt_report.csproj.ResolveComReference.cache
+C:\Users\ajn_1\Documents\ADEV\ASSET_REP\code\pttreport-master_20170722_#2\pttreport-master\ptt_report\obj\Release\ptt_report.dll
+C:\Users\ajn_1\Documents\ADEV\ASSET_REP\code\pttreport-master_20170722_#2\pttreport-master\ptt_report\obj\Release\ptt_report.pdb
